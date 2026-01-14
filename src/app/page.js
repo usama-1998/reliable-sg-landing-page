@@ -292,10 +292,10 @@ const ReliableSGLanding = () => {
                 }}></div>
 
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
-                    <div className="flex flex-col md:flex-row justify-between items-end mb-20">
+                    <div className="mb-20 text-center md:text-left">
                         <div>
                             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none mb-4">How It<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE0D15] to-red-600 inline-block transform -skew-x-12">Works</span></h2>
-                            <div className="h-2 w-24 bg-[#FE0D15]"></div>
+                            <div className="h-2 w-24 bg-[#FE0D15] mx-auto md:mx-0"></div>
                         </div>
                     </div>
 
