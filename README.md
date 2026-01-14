@@ -21,8 +21,6 @@ This landing page is built with modern web technologies:
 
 ## Branding
 
-
-
 The project uses a bold Red (`#FE0D15`) color scheme to convey urgency and power, matching the "Reliable SG" identity.
 Consistent "Black Label" badge styling is used across the Hero and Footer for unified branding.
 
@@ -34,6 +32,12 @@ The landing page features a premium "Dark Mode" aesthetic with:
 - **Technical Aesthetics**: Rugged borders, mesh grids, and "glitch" style typography for a modern, high-performance look.
 - **Action Typography**: Strategic skew/tilt transformations on key brand words (Revive, Hustle, Friendly) to create forward momentum.
 - **Responsive Layouts**: Fully responsive grids for Video, Pricing, Process, and Testimonial sections.
+
+## Recent Updates
+
+- **Video Modal**: Clean, immersive modal for video playback using a custom `VideoModal` component.
+- **Minimalist Testimonials**: Redesigned testimonial cards with a sleek, flat glassmorphism look for better readability.
+- **Functional Buttons**: All buttons are hooked up to real actions (Phone dialer, WhatsApp direct links with pre-filled messages).
 
 ## Getting Started
 

@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Phone, Battery, Zap, Clock, ShieldCheck, CheckCircle2, ChevronDown, MapPin, Star, Menu, X } from 'lucide-react';
+import { Phone, Battery, Zap, Clock, ShieldCheck, CheckCircle2, ChevronDown, MapPin, Star, Menu, X, Play } from 'lucide-react';
+import VideoModal from '../components/VideoModal';
 
 // NOTE: In a real Next.js app, this file would be located at 'app/page.js'
 // You can keep the component name or rename it to 'Page'.
@@ -27,8 +28,11 @@ const ReliableSGLanding = () => {
         }
     };
 
+    const [showVideoModal, setShowVideoModal] = useState(false);
+
     return (
         <div className="min-h-screen bg-[#0f1115] text-white font-sans selection:bg-[#FE0D15] selection:text-black overflow-x-hidden">
+            <VideoModal isOpen={showVideoModal} onClose={() => setShowVideoModal(false)} videoId="YOUR_VIDEO_ID_HERE" />
             {/* Texture Overlay for "Grainy" look */}
             <div className="fixed inset-0 opacity-[0.03] pointer-events-none z-50" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}></div>
 
@@ -41,9 +45,9 @@ const ReliableSGLanding = () => {
                         <button onClick={() => scrollToSection('benefits')} className="hover:text-[#FE0D15] transition-colors">Why Us?</button>
                         <button onClick={() => scrollToSection('process')} className="hover:text-[#FE0D15] transition-colors">Process</button>
                         <button onClick={() => scrollToSection('reviews')} className="hover:text-[#FE0D15] transition-colors">Reviews</button>
-                        <button className="bg-white text-black px-5 py-2 rounded-sm font-bold hover:bg-[#FE0D15] transition-colors flex items-center gap-2">
+                        <a href="tel:88881234" className="bg-white text-black px-5 py-2 rounded-sm font-bold hover:bg-[#FE0D15] transition-colors flex items-center gap-2">
                             <Phone className="w-4 h-4" /> 8888-1234
-                        </button>
+                        </a>
                     </div>
 
                     {/* Mobile Menu Toggle */}
@@ -60,9 +64,9 @@ const ReliableSGLanding = () => {
                         <button onClick={() => scrollToSection('benefits')} className="text-left border-b border-white/10 pb-4">Why Us?</button>
                         <button onClick={() => scrollToSection('process')} className="text-left border-b border-white/10 pb-4">Process</button>
                         <button onClick={() => scrollToSection('reviews')} className="text-left border-b border-white/10 pb-4">Reviews</button>
-                        <button className="bg-[#FE0D15] text-black p-4 rounded-sm font-bold flex justify-center items-center gap-2 mt-4">
+                        <a href="tel:88881234" className="bg-[#FE0D15] text-black p-4 rounded-sm font-bold flex justify-center items-center gap-2 mt-4">
                             <Phone className="w-5 h-5" /> Call Now
-                        </button>
+                        </a>
                     </div>
                 </div>
             )}
@@ -104,17 +108,17 @@ const ReliableSGLanding = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                            <button className="group relative px-10 py-5 bg-[#FE0D15] text-black font-black text-xl rounded-sm w-full sm:w-auto overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(254,13,21,0.4)]">
+                            <a href="tel:88881234" className="group relative px-10 py-5 bg-[#FE0D15] text-black font-black text-xl rounded-sm w-full sm:w-auto overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(254,13,21,0.4)] text-center block">
                                 <span className="relative z-10 flex items-center justify-center gap-3">
                                     <Phone className="w-6 h-6 fill-current" /> GET RESCUED
                                 </span>
                                 <div className="absolute inset-0 bg-white/30 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-                            </button>
+                            </a>
 
-                            <button className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-sm w-full sm:w-auto hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-3 backdrop-blur-sm">
+                            <a href="https://wa.me/6588881234" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-sm w-full sm:w-auto hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-3 backdrop-blur-sm">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-6 h-6" />
                                 WhatsApp Us
-                            </button>
+                            </a>
                         </div>
 
                         <div className="mt-8 flex items-center justify-center gap-6 opacity-60 text-sm font-mono text-gray-400">
@@ -157,8 +161,11 @@ const ReliableSGLanding = () => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
 
-                                <button className="relative z-10 w-20 h-20 bg-[#FE0D15] rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-[0_0_30px_rgba(254,13,21,0.5)] group/play">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[22px] border-l-black border-b-[12px] border-b-transparent ml-2 group-hover/play:border-l-white transition-colors"></div>
+                                <button
+                                    onClick={() => setShowVideoModal(true)}
+                                    className="relative z-10 w-20 h-20 bg-[#FE0D15] rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-[0_0_30px_rgba(254,13,21,0.5)] group/play"
+                                >
+                                    <Play className="w-8 h-8 text-black fill-current ml-1" />
                                 </button>
 
                                 <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
@@ -240,7 +247,7 @@ const ReliableSGLanding = () => {
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> 45Ah - 60Ah Spec</li>
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> Free Onsite Install</li>
                             </ul>
-                            <button className="w-full py-4 border border-white/20 hover:bg-white hover:text-black transition-colors font-bold rounded-sm text-sm uppercase tracking-wide">Select This Plan</button>
+                            <a href="https://wa.me/6588881234?text=Hi,%20I%20am%20interested%20in%20the%20Standard%20Asian%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 border border-white/20 hover:bg-white hover:text-black transition-colors font-bold rounded-sm text-sm uppercase tracking-wide">Select This Plan</a>
                         </div>
 
                         {/* Card 2 - Highlighted */}
@@ -259,7 +266,7 @@ const ReliableSGLanding = () => {
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> 12-Month Warranty</li>
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> Priority Dispatch</li>
                             </ul>
-                            <button className="w-full py-4 bg-[#FE0D15] text-black font-black rounded-sm text-sm uppercase tracking-wide hover:brightness-110 transition-all shadow-lg hover:shadow-[0_0_20px_rgba(254,13,21,0.4)]">Select This Plan</button>
+                            <a href="https://wa.me/6588881234?text=Hi,%20I%20am%20interested%20in%20the%20High%20Perf%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 bg-[#FE0D15] text-black font-black rounded-sm text-sm uppercase tracking-wide hover:brightness-110 transition-all shadow-lg hover:shadow-[0_0_20px_rgba(254,13,21,0.4)]">Select This Plan</a>
                         </div>
 
                         {/* Card 3 */}
@@ -277,7 +284,7 @@ const ReliableSGLanding = () => {
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> AGM Technology</li>
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> <span className="text-white font-bold">Computer Reset Included</span></li>
                             </ul>
-                            <button className="w-full py-4 border border-white/20 hover:bg-white hover:text-black transition-colors font-bold rounded-sm text-sm uppercase tracking-wide">Select This Plan</button>
+                            <a href="https://wa.me/6588881234?text=Hi,%20I%20am%20interested%20in%20the%20Continental%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 border border-white/20 hover:bg-white hover:text-black transition-colors font-bold rounded-sm text-sm uppercase tracking-wide">Select This Plan</a>
                         </div>
                     </div>
                 </div>
@@ -352,69 +359,69 @@ const ReliableSGLanding = () => {
                         {[...Array(2)].map((_, i) => (
                             <div key={i} className="flex gap-8 shrink-0">
                                 {/* Testimonial 1 */}
-                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between transform -skew-x-2 hover:skew-x-0 transition-transform duration-300">
+                                <div className="w-[400px] bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 relative flex flex-col justify-between hover:bg-white/10 transition-colors duration-300">
                                     <div>
-                                        <div className="flex text-[#FE0D15] mb-6 gap-1">
-                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
+                                        <div className="flex text-[#FE0D15] mb-4 gap-1">
+                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-4 h-4" />)}
                                         </div>
-                                        <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Stuck at Changi Airport queue with dead battery. Reliable SG came in 20 mins. Saved my shift. Pricing very reasonable for midnight service."</p>
+                                        <p className="text-gray-300 font-light mb-6 text-lg leading-relaxed">"Stuck at Changi Airport queue with dead battery. Reliable SG came in 20 mins. Saved my shift. Pricing very reasonable for midnight service."</p>
                                     </div>
-                                    <div className="flex items-center gap-4 border-t border-white/5 pt-6">
-                                        <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">MR</div>
+                                    <div className="flex items-center gap-4">
+                                        <div className="w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center text-xs font-bold ring-2 ring-[#FE0D15]/20">MR</div>
                                         <div>
-                                            <div className="font-bold text-base text-white">Mr. Razak</div>
-                                            <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Grab Driver</div>
+                                            <div className="font-semibold text-base text-white">Mr. Razak</div>
+                                            <div className="text-xs text-[#FE0D15]/80 font-medium uppercase tracking-wider">Grab Driver</div>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Testimonial 2 */}
-                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between transform -skew-x-2 hover:skew-x-0 transition-transform duration-300">
+                                <div className="w-[400px] bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 relative flex flex-col justify-between hover:bg-white/10 transition-colors duration-300">
                                     <div>
-                                        <div className="flex text-[#FE0D15] mb-6 gap-1">
-                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
+                                        <div className="flex text-[#FE0D15] mb-4 gap-1">
+                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-4 h-4" />)}
                                         </div>
-                                        <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Very professional. They didn't just change battery, they checked my alternator too. Honest, fast, and no hidden costs."</p>
+                                        <p className="text-gray-300 font-light mb-6 text-lg leading-relaxed">"Very professional. They didn't just change battery, they checked my alternator too. Honest, fast, and no hidden costs."</p>
                                     </div>
-                                    <div className="flex items-center gap-4 border-t border-white/5 pt-6">
-                                        <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">AL</div>
+                                    <div className="flex items-center gap-4">
+                                        <div className="w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center text-xs font-bold ring-2 ring-[#FE0D15]/20">AL</div>
                                         <div>
-                                            <div className="font-bold text-base text-white">Alvin Lim</div>
-                                            <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Gojek Driver</div>
+                                            <div className="font-semibold text-base text-white">Alvin Lim</div>
+                                            <div className="text-xs text-[#FE0D15]/80 font-medium uppercase tracking-wider">Gojek Driver</div>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Testimonial 3 */}
-                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between transform -skew-x-2 hover:skew-x-0 transition-transform duration-300">
+                                <div className="w-[400px] bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 relative flex flex-col justify-between hover:bg-white/10 transition-colors duration-300">
                                     <div>
-                                        <div className="flex text-[#FE0D15] mb-6 gap-1">
-                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
+                                        <div className="flex text-[#FE0D15] mb-4 gap-1">
+                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-4 h-4" />)}
                                         </div>
-                                        <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Best price I found for AGM battery. Other shops wanted +$50. Highly recommend for any PHV driver needing quick fix."</p>
+                                        <p className="text-gray-300 font-light mb-6 text-lg leading-relaxed">"Best price I found for AGM battery. Other shops wanted +$50. Highly recommend for any PHV driver needing quick fix."</p>
                                     </div>
-                                    <div className="flex items-center gap-4 border-t border-white/5 pt-6">
-                                        <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">DT</div>
+                                    <div className="flex items-center gap-4">
+                                        <div className="w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center text-xs font-bold ring-2 ring-[#FE0D15]/20">DT</div>
                                         <div>
-                                            <div className="font-bold text-base text-white">David Tan</div>
-                                            <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Mercedes C180</div>
+                                            <div className="font-semibold text-base text-white">David Tan</div>
+                                            <div className="text-xs text-[#FE0D15]/80 font-medium uppercase tracking-wider">Mercedes C180</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                {/* Extra Testimonial (to fill space) */}
-                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between transform -skew-x-2 hover:skew-x-0 transition-transform duration-300">
+                                {/* Extra Testimonial */}
+                                <div className="w-[400px] bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 relative flex flex-col justify-between hover:bg-white/10 transition-colors duration-300">
                                     <div>
-                                        <div className="flex text-[#FE0D15] mb-6 gap-1">
-                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
+                                        <div className="flex text-[#FE0D15] mb-4 gap-1">
+                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-4 h-4" />)}
                                         </div>
-                                        <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Saved me on a public holiday morning. Technician was polite and explained the battery health clearly."</p>
+                                        <p className="text-gray-300 font-light mb-6 text-lg leading-relaxed">"Saved me on a public holiday morning. Technician was polite and explained the battery health clearly."</p>
                                     </div>
-                                    <div className="flex items-center gap-4 border-t border-white/5 pt-6">
-                                        <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">SJ</div>
+                                    <div className="flex items-center gap-4">
+                                        <div className="w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center text-xs font-bold ring-2 ring-[#FE0D15]/20">SJ</div>
                                         <div>
-                                            <div className="font-bold text-base text-white">Sarah James</div>
-                                            <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Honda Jazz</div>
+                                            <div className="font-semibold text-base text-white">Sarah James</div>
+                                            <div className="text-xs text-[#FE0D15]/80 font-medium uppercase tracking-wider">Honda Jazz</div>
                                         </div>
                                     </div>
                                 </div>
@@ -457,16 +464,16 @@ const ReliableSGLanding = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                        <button className="bg-black text-white px-12 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center gap-3 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-black group">
+                        <a href="tel:88881234" className="bg-black text-white px-12 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center gap-3 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-black group">
                             <div className="w-10 h-10 bg-[#FE0D15] rounded-full flex items-center justify-center text-black group-hover:rotate-12 transition-transform">
                                 <Phone className="w-5 h-5 fill-current" />
                             </div>
                             CALL 8888-1234
-                        </button>
-                        <button className="bg-white text-black border-4 border-black px-10 py-5 rounded-sm font-bold text-xl hover:bg-gray-100 transition-colors flex items-center gap-3 shadow-lg">
+                        </a>
+                        <a href="https://wa.me/6588881234" target="_blank" rel="noopener noreferrer" className="bg-white text-black border-4 border-black px-10 py-5 rounded-sm font-bold text-xl hover:bg-gray-100 transition-colors flex items-center gap-3 shadow-lg">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-8 h-8" />
                             WhatsApp Us
-                        </button>
+                        </a>
                     </div>
 
                     <div className="mt-20 pt-8 border-t border-black/20 flex flex-col md:flex-row justify-between items-center text-sm font-bold opacity-70">
