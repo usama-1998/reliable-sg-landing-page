@@ -21,7 +21,16 @@ This landing page is built with modern web technologies:
 
 ## Branding
 
+
 The project uses a bold Red (`#FE0D15`) color scheme to convey urgency and power, matching the "Reliable SG" identity.
+
+## Visual Design
+
+The landing page features a premium "Dark Mode" aesthetic with:
+- **Glassmorphism**: Backdrop blur effects on cards and overlays.
+- **Dynamic Animations**: Pulse effects, gradient shimmers, and smooth transitions.
+- **Technical Aesthetics**: Rugged borders, mesh grids, and "glitch" style typography for a modern, high-performance look.
+- **Responsive Layouts**: Fully responsive grids for Video, Pricing, Process, and Testimonial sections.
 
 ## Getting Started
 
