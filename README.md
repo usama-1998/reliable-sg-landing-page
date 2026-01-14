@@ -17,6 +17,10 @@ This landing page is built with modern web technologies:
 - **[Tailwind CSS](https://tailwindcss.com/)**: Rapidly build modern websites without ever leaving your HTML.
 - **[Lucide React](https://lucide.dev/)**: Beautiful & consistent icon toolkit.
 
+## Branding
+
+The project uses a bold Red (`#FE0D15`) color scheme to convey urgency and power, matching the "Reliable SG" identity.
+
 ## Getting Started
 
 First, install the dependencies:
