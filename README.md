@@ -30,6 +30,7 @@ The landing page features a premium "Dark Mode" aesthetic with:
 - **Glassmorphism**: Backdrop blur effects on cards and overlays.
 - **Dynamic Animations**: Pulse effects, gradient shimmers, and smooth transitions.
 - **Technical Aesthetics**: Rugged borders, mesh grids, and "glitch" style typography for a modern, high-performance look.
+- **Action Typography**: Strategic skew/tilt transformations on key brand words (Revive, Hustle, Friendly) to create forward momentum.
 - **Responsive Layouts**: Fully responsive grids for Video, Pricing, Process, and Testimonial sections.
 
 ## Getting Started

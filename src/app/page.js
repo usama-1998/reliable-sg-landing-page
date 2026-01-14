@@ -89,13 +89,13 @@ const ReliableSGLanding = () => {
 
                 <div className="container mx-auto px-4 md:px-6 relative z-10 w-full">
                     <div className="max-w-5xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#FE0D15] bg-[#FE0D15]/10 text-[#FE0D15] text-sm font-bold uppercase tracking-widest mb-8 backdrop-blur-sm shadow-[0_0_20px_rgba(254,13,21,0.2)]">
+                        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#FE0D15] bg-[#FE0D15]/10 text-[#FE0D15] text-sm font-bold uppercase tracking-widest mb-8 backdrop-blur-sm shadow-[0_0_20px_rgba(254,13,21,0.2)] transform -skew-x-12">
                             Priority Service for PHV Drivers
                         </div>
 
                         <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.85] tracking-tighter mb-10 transform -skew-x-2">
                             BATTERY <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">DEAD?</span><br />
-                            <span className="text-[#FE0D15]">WE REVIVE IT.</span>
+                            <span className="text-[#FE0D15] inline-block transform -skew-x-12">WE REVIVE IT.</span>
                         </h1>
 
                         <p className="text-gray-300 text-xl md:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
@@ -176,7 +176,7 @@ const ReliableSGLanding = () => {
 
                         <div>
                             <div className="inline-block text-[#FE0D15] font-bold tracking-widest text-xs uppercase mb-4 border-b border-[#FE0D15] pb-1">Efficiency First</div>
-                            <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">BUILT FOR THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE0D15] to-red-500">HUSTLE</span>.</h2>
+                            <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">BUILT FOR THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE0D15] to-red-500 inline-block transform -skew-x-12">HUSTLE</span>.</h2>
 
                             <div className="space-y-8">
                                 <div className="flex gap-6 group">
@@ -220,7 +220,7 @@ const ReliableSGLanding = () => {
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="text-center mb-16">
                         <div className="inline-block px-3 py-1 bg-white/5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-white/10">Price Transparency</div>
-                        <h2 className="text-4xl md:text-5xl font-black mb-4">PHV <span className="text-[#FE0D15] italic">Friendly</span> Pricing</h2>
+                        <h2 className="text-4xl md:text-5xl font-black mb-4">PHV <span className="text-[#FE0D15] italic inline-block transform -skew-x-12">Friendly</span> Pricing</h2>
                         <p className="text-gray-400 max-w-xl mx-auto text-lg">No shock bill. The price we quote is the final price you pay. Includes installation, testing, and warranty.</p>
                     </div>
 
@@ -294,7 +294,7 @@ const ReliableSGLanding = () => {
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-20">
                         <div>
-                            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none mb-4">How It<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE0D15] to-red-600">Works</span></h2>
+                            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none mb-4">How It<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE0D15] to-red-600 inline-block transform -skew-x-12">Works</span></h2>
                             <div className="h-2 w-24 bg-[#FE0D15]"></div>
                         </div>
                     </div>
@@ -343,7 +343,7 @@ const ReliableSGLanding = () => {
                 <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
 
                 <div className="container mx-auto px-4 md:px-6 relative z-10 mb-12">
-                    <h2 className="text-center text-4xl font-black uppercase tracking-tight">Trusted by <span className="underline decoration-[#FE0D15] decoration-4 underline-offset-4">SG Drivers</span></h2>
+                    <h2 className="text-center text-4xl font-black uppercase tracking-tight">Trusted by <span className="underline decoration-[#FE0D15] decoration-4 underline-offset-4 inline-block transform -skew-x-12">SG Drivers</span></h2>
                 </div>
 
                 {/* Marquee Container */}
