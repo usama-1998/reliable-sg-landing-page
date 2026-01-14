@@ -22,7 +22,9 @@ This landing page is built with modern web technologies:
 ## Branding
 
 
+
 The project uses a bold Red (`#FE0D15`) color scheme to convey urgency and power, matching the "Reliable SG" identity.
+Consistent "Black Label" badge styling is used across the Hero and Footer for unified branding.
 
 ## Visual Design
 

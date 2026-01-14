@@ -89,7 +89,7 @@ const ReliableSGLanding = () => {
 
                 <div className="container mx-auto px-4 md:px-6 relative z-10 w-full">
                     <div className="max-w-5xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#FE0D15] bg-[#FE0D15]/10 text-[#FE0D15] text-sm font-bold uppercase tracking-widest mb-8 backdrop-blur-sm shadow-[0_0_20px_rgba(254,13,21,0.2)] transform -skew-x-12">
+                        <div className="inline-block bg-black text-[#FE0D15] px-4 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-8 border border-white/10 shadow-lg transform -rotate-2 backdrop-blur-md">
                             Priority Service for PHV Drivers
                         </div>
 
