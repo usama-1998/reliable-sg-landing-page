@@ -5,7 +5,9 @@ Reliable SG provides instant on-site battery replacement services for cars in Si
 ## Features
 
 - **24/7 Availability**: We are ready to help whenever you need us.
-- **Instant Replacement**: fast on-site service at your location.
+- **Fast On-Site Service**: Rapid dispatch to your location.
+- **Priority for PHV Drivers**: Dedicated support for Private Hire Vehicle drivers.
+- **No Membership Required**: Pay only when you need us.
 - **Professional Technicians**: Experienced and skilled staff.
 - **Quality Batteries**: Top-tier batteries with warranty assurance.
 
