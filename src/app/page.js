@@ -100,7 +100,7 @@ const ReliableSGLanding = () => {
 
                         <p className="text-gray-300 text-xl md:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
                             Don't lose income waiting. <strong className="text-white">Reliable SG</strong> is the rapid response team for Grab, Gojek, and Tada drivers. <br className="hidden md:block" />
-                            <span className="bg-[#FE0D15]/10 text-[#FE0D15] px-2 py-0.5 rounded-sm border border-[#FE0D15]/20">30 min</span> arrival or it's free.
+                            <span className="bg-[#FE0D15]/10 text-[#FE0D15] px-2 py-0.5 rounded-sm border border-[#FE0D15]/20">30 min</span> arrival.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
