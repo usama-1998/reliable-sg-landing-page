@@ -90,10 +90,6 @@ const ReliableSGLanding = () => {
                 <div className="container mx-auto px-4 md:px-6 relative z-10 w-full">
                     <div className="max-w-5xl mx-auto text-center">
                         <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#FE0D15] bg-[#FE0D15]/10 text-[#FE0D15] text-sm font-bold uppercase tracking-widest mb-8 backdrop-blur-sm shadow-[0_0_20px_rgba(254,13,21,0.2)]">
-                            <span className="relative flex h-3 w-3">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FE0D15] opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-3 w-3 bg-[#FE0D15]"></span>
-                            </span>
                             Priority Service for PHV Drivers
                         </div>
 
@@ -356,7 +352,7 @@ const ReliableSGLanding = () => {
                         {[...Array(2)].map((_, i) => (
                             <div key={i} className="flex gap-8 shrink-0">
                                 {/* Testimonial 1 */}
-                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between">
+                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between transform -skew-x-2 hover:skew-x-0 transition-transform duration-300">
                                     <div>
                                         <div className="flex text-[#FE0D15] mb-6 gap-1">
                                             {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
@@ -373,7 +369,7 @@ const ReliableSGLanding = () => {
                                 </div>
 
                                 {/* Testimonial 2 */}
-                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between">
+                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between transform -skew-x-2 hover:skew-x-0 transition-transform duration-300">
                                     <div>
                                         <div className="flex text-[#FE0D15] mb-6 gap-1">
                                             {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
@@ -390,7 +386,7 @@ const ReliableSGLanding = () => {
                                 </div>
 
                                 {/* Testimonial 3 */}
-                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between">
+                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between transform -skew-x-2 hover:skew-x-0 transition-transform duration-300">
                                     <div>
                                         <div className="flex text-[#FE0D15] mb-6 gap-1">
                                             {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
@@ -407,7 +403,7 @@ const ReliableSGLanding = () => {
                                 </div>
 
                                 {/* Extra Testimonial (to fill space) */}
-                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between">
+                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between transform -skew-x-2 hover:skew-x-0 transition-transform duration-300">
                                     <div>
                                         <div className="flex text-[#FE0D15] mb-6 gap-1">
                                             {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
