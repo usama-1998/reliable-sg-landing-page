@@ -77,7 +77,6 @@ const ReliableSGLanding = () => {
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#FE0D15]/30 bg-[#FE0D15]/10 text-[#FE0D15] text-xs font-bold uppercase tracking-wider mb-6">
                             <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FE0D15] opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FE0D15]"></span>
                             </span>
                             Priority Service for PHV Drivers
@@ -130,9 +129,9 @@ const ReliableSGLanding = () => {
                             <div className="relative aspect-video bg-gray-800 rounded-sm overflow-hidden flex items-center justify-center border border-white/10">
                                 {/* Placeholder for the video mentioned in audio */}
                                 <img
-                                    src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                    src="/mechanic_battery.png"
                                     alt="Mechanic working on car"
-                                    className="absolute inset-0 w-full h-full object-cover opacity-40"
+                                    className="absolute inset-0 w-full h-full object-cover opacity-60"
                                 />
                                 <button className="relative z-10 w-16 h-16 bg-[#FE0D15] rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-[0_0_30px_rgba(204,255,0,0.4)]">
                                     <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-black border-b-[10px] border-b-transparent ml-1"></div>
@@ -335,8 +334,8 @@ const ReliableSGLanding = () => {
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, black 1px, transparent 0)', backgroundSize: '20px 20px' }}></div>
 
                 <div className="container mx-auto px-4 text-center relative z-10">
-                    <h2 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tighter">Don't Get Stranded.</h2>
-                    <p className="text-xl md:text-2xl font-medium mb-10 max-w-2xl mx-auto">Save our number now. You never know when you'll need a jumpstart or a swap.</p>
+                    <h2 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tighter">Ready to Drive?</h2>
+                    <p className="text-xl md:text-2xl font-medium mb-10 max-w-2xl mx-auto">Instant dispatch. Zero hassle. Let's get you moving again.</p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                         <button className="bg-black text-white px-10 py-5 rounded-sm font-bold text-xl hover:scale-105 transition-transform flex items-center gap-3 shadow-2xl">
