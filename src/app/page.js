@@ -301,7 +301,6 @@ const ReliableSGLanding = () => {
                             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none mb-4">How It<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE0D15] to-red-600">Works</span></h2>
                             <div className="h-2 w-24 bg-[#FE0D15]"></div>
                         </div>
-                        <p className="text-xl text-gray-400 pb-2 max-w-sm mt-6 md:mt-0">Simple 3-step recovery process designed to get you back earning.</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-12 relative">
@@ -342,59 +341,89 @@ const ReliableSGLanding = () => {
                 </div>
             </section>
 
-            {/* TESTIMONIALS */}
-            <section id="reviews" className="py-24 bg-[#111318] relative">
+            {/* TESTIMONIALS (AUTO-SCROLLING FILM ROLL) */}
+            <section id="reviews" className="py-24 bg-[#111318] relative overflow-hidden border-y border-white/5">
                 {/* Subtle Pattern */}
                 <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
 
-                <div className="container mx-auto px-4 md:px-6 relative z-10">
-                    <h2 className="text-center text-4xl font-black mb-16 uppercase tracking-tight">Trusted by <span className="underline decoration-[#FE0D15] decoration-4 underline-offset-4">SG Drivers</span></h2>
+                <div className="container mx-auto px-4 md:px-6 relative z-10 mb-12">
+                    <h2 className="text-center text-4xl font-black uppercase tracking-tight">Trusted by <span className="underline decoration-[#FE0D15] decoration-4 underline-offset-4">SG Drivers</span></h2>
+                </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative">
-                            <div className="absolute -top-4 -right-4 bg-[#FE0D15] text-black text-4xl font-serif h-10 w-10 flex items-center justify-center rounded-full">"</div>
-                            <div className="flex text-[#FE0D15] mb-6 gap-1">
-                                <Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" />
-                            </div>
-                            <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Stuck at Changi Airport queue with dead battery. Reliable SG came in 20 mins. Saved my shift. Pricing very reasonable for midnight service."</p>
-                            <div className="flex items-center gap-4 border-t border-white/5 pt-6">
-                                <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">MR</div>
-                                <div>
-                                    <div className="font-bold text-base text-white">Mr. Razak</div>
-                                    <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Grab Driver</div>
+                {/* Marquee Container */}
+                <div className="relative w-full overflow-hidden">
+                    <div className="flex w-max animate-marquee gap-8 items-stretch">
+                        {[...Array(2)].map((_, i) => (
+                            <div key={i} className="flex gap-8 shrink-0">
+                                {/* Testimonial 1 */}
+                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between">
+                                    <div>
+                                        <div className="flex text-[#FE0D15] mb-6 gap-1">
+                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
+                                        </div>
+                                        <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Stuck at Changi Airport queue with dead battery. Reliable SG came in 20 mins. Saved my shift. Pricing very reasonable for midnight service."</p>
+                                    </div>
+                                    <div className="flex items-center gap-4 border-t border-white/5 pt-6">
+                                        <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">MR</div>
+                                        <div>
+                                            <div className="font-bold text-base text-white">Mr. Razak</div>
+                                            <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Grab Driver</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Testimonial 2 */}
+                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between">
+                                    <div>
+                                        <div className="flex text-[#FE0D15] mb-6 gap-1">
+                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
+                                        </div>
+                                        <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Very professional. They didn't just change battery, they checked my alternator too. Honest, fast, and no hidden costs."</p>
+                                    </div>
+                                    <div className="flex items-center gap-4 border-t border-white/5 pt-6">
+                                        <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">AL</div>
+                                        <div>
+                                            <div className="font-bold text-base text-white">Alvin Lim</div>
+                                            <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Gojek Driver</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Testimonial 3 */}
+                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between">
+                                    <div>
+                                        <div className="flex text-[#FE0D15] mb-6 gap-1">
+                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
+                                        </div>
+                                        <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Best price I found for AGM battery. Other shops wanted +$50. Highly recommend for any PHV driver needing quick fix."</p>
+                                    </div>
+                                    <div className="flex items-center gap-4 border-t border-white/5 pt-6">
+                                        <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">DT</div>
+                                        <div>
+                                            <div className="font-bold text-base text-white">David Tan</div>
+                                            <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Mercedes C180</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Extra Testimonial (to fill space) */}
+                                <div className="w-[400px] bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative flex flex-col justify-between">
+                                    <div>
+                                        <div className="flex text-[#FE0D15] mb-6 gap-1">
+                                            {[...Array(5)].map((_, i) => <Star key={i} className="fill-current w-5 h-5" />)}
+                                        </div>
+                                        <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Saved me on a public holiday morning. Technician was polite and explained the battery health clearly."</p>
+                                    </div>
+                                    <div className="flex items-center gap-4 border-t border-white/5 pt-6">
+                                        <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">SJ</div>
+                                        <div>
+                                            <div className="font-bold text-base text-white">Sarah James</div>
+                                            <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Honda Jazz</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div className="bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative mt-8 md:mt-0">
-                            <div className="absolute -top-4 -right-4 bg-[#FE0D15] text-black text-4xl font-serif h-10 w-10 flex items-center justify-center rounded-full">"</div>
-                            <div className="flex text-[#FE0D15] mb-6 gap-1">
-                                <Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" />
-                            </div>
-                            <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Very professional. They didn't just change battery, they checked my alternator too. Honest, fast, and no hidden costs."</p>
-                            <div className="flex items-center gap-4 border-t border-white/5 pt-6">
-                                <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">AL</div>
-                                <div>
-                                    <div className="font-bold text-base text-white">Alvin Lim</div>
-                                    <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Gojek Driver</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="bg-[#1a1d24] p-8 rounded-sm border-l-4 border-[#FE0D15] shadow-lg relative md:col-span-2 lg:col-span-1">
-                            <div className="absolute -top-4 -right-4 bg-[#FE0D15] text-black text-4xl font-serif h-10 w-10 flex items-center justify-center rounded-full">"</div>
-                            <div className="flex text-[#FE0D15] mb-6 gap-1">
-                                <Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" /><Star className="fill-current w-5 h-5" />
-                            </div>
-                            <p className="text-gray-300 italic mb-8 text-lg leading-relaxed">"Best price I found for AGM battery. Other shops wanted +$50. Highly recommend for any PHV driver needing quick fix."</p>
-                            <div className="flex items-center gap-4 border-t border-white/5 pt-6">
-                                <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-sm font-bold border-2 border-[#FE0D15]/20">DT</div>
-                                <div>
-                                    <div className="font-bold text-base text-white">David Tan</div>
-                                    <div className="text-xs text-[#FE0D15] font-bold uppercase tracking-wider">Mercedes C180</div>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
