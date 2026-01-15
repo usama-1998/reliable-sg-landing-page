@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Phone, Battery, Zap, Clock, ShieldCheck, CheckCircle2, ChevronDown, MapPin, Star, Menu, X, Play } from 'lucide-react';
+import { Phone, Battery, Zap, Clock, ShieldCheck, CheckCircle2, Menu, X, Star, Play } from 'lucide-react';
 import VideoModal from '../components/VideoModal';
 
 // NOTE: In a real Next.js app, this file would be located at 'app/page.js'
@@ -30,9 +30,17 @@ const ReliableSGLanding = () => {
 
     const [showVideoModal, setShowVideoModal] = useState(false);
 
+
+
     return (
         <div className="min-h-screen bg-[#0f1115] text-white font-sans selection:bg-[#FE0D15] selection:text-black overflow-x-hidden">
-            <VideoModal isOpen={showVideoModal} onClose={() => setShowVideoModal(false)} videoId="YOUR_VIDEO_ID_HERE" />
+
+            <VideoModal
+                isOpen={showVideoModal}
+                onClose={() => setShowVideoModal(false)}
+                videoId="7582042819565456647"
+                platform="tiktok"
+            />
             {/* Texture Overlay for "Grainy" look */}
             <div className="fixed inset-0 opacity-[0.03] pointer-events-none z-50" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}></div>
 
@@ -309,7 +317,7 @@ const ReliableSGLanding = () => {
                     <div className="grid md:grid-cols-3 gap-12 relative">
                         {/* Interactive Connector Line */}
                         <div className="hidden md:block absolute top-16 left-[15%] right-[15%] h-[2px] bg-gray-800">
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FE0D15] to-transparent w-1/2 animate-[shimmer_3s_infinite_linear]"></div>
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FE0D15] to-transparent w-1/2 animate-shimmer"></div>
                         </div>
 
                         {/* Step 1 */}

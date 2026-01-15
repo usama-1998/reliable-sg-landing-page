@@ -36,6 +36,7 @@ The landing page features a premium "Dark Mode" aesthetic with:
 ## Recent Updates
 
 - **Video Modal**: Clean, immersive modal for video playback using a custom `VideoModal` component.
+- **TikTok Integration**: Added support for TikTok video playback within the modal, optimizing for vertical (9:16) aspect ratios.
 - **Minimalist Testimonials**: Redesigned testimonial cards with a sleek, flat glassmorphism look for better readability.
 - **Functional Buttons**: All buttons are hooked up to real actions (Phone dialer, WhatsApp direct links with pre-filled messages).
 
