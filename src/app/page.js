@@ -115,16 +115,16 @@ const ReliableSGLanding = () => {
                             <span className="bg-[#FE0D15]/10 text-[#FE0D15] px-2 py-0.5 rounded-sm border border-[#FE0D15]/20">30 min</span> arrival.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                            <a href="tel:80206646" className="bg-[#FE0D15] text-black px-12 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center gap-3 shadow-[0_0_40px_rgba(254,13,21,0.4)] border-2 border-[#FE0D15] group">
-                                <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-[#FE0D15] group-hover:rotate-12 transition-transform">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-2xl mx-auto">
+                            <a href="tel:80206646" className="flex-1 bg-[#FE0D15] text-black px-8 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(254,13,21,0.4)] border-2 border-[#FE0D15] group w-full text-center">
+                                <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-[#FE0D15] group-hover:rotate-12 transition-transform shrink-0">
                                     <Phone className="w-5 h-5 fill-current" />
                                 </div>
-                                CALL JIM 8020 6646
+                                <span className="whitespace-nowrap">CALL JIM 8020 6646</span>
                             </a>
 
-                            <a href="https://wa.me/6580206646" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-sm w-full sm:w-auto hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-3 backdrop-blur-sm">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-6 h-6" />
+                            <a href="https://wa.me/6580206646" target="_blank" rel="noopener noreferrer" className="flex-1 px-8 py-6 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-sm w-full hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-3 backdrop-blur-sm text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-8 h-8 shrink-0" />
                                 WhatsApp Us
                             </a>
                         </div>
@@ -173,8 +173,7 @@ const ReliableSGLanding = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
 
                                 <button
-                                    onClick={() => setShowVideoModal(true)}
-                                    className="relative z-10 w-20 h-20 bg-[#FE0D15] rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-[0_0_30px_rgba(254,13,21,0.5)] group/play"
+                                    className="relative z-10 w-20 h-20 bg-[#FE0D15] rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-[0_0_30px_rgba(254,13,21,0.5)] group/play pointer-events-none"
                                 >
                                     <Play className="w-8 h-8 text-black fill-current ml-1" />
                                 </button>
@@ -474,15 +473,15 @@ const ReliableSGLanding = () => {
                         We are <span className="underline decoration-black decoration-4 decoration-skip-ink">20 minutes</span> away.
                     </p>
 
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                        <a href="tel:80206646" className="bg-black text-white px-12 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center gap-3 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-black group">
-                            <div className="w-10 h-10 bg-[#FE0D15] rounded-full flex items-center justify-center text-black group-hover:rotate-12 transition-transform">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-2xl mx-auto">
+                        <a href="tel:80206646" className="flex-1 bg-black text-white px-8 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-black group w-full text-center">
+                            <div className="w-10 h-10 bg-[#FE0D15] rounded-full flex items-center justify-center text-black group-hover:rotate-12 transition-transform shrink-0">
                                 <Phone className="w-5 h-5 fill-current" />
                             </div>
-                            CALL JIM 8020 6646
+                            <span className="whitespace-nowrap">CALL JIM 8020 6646</span>
                         </a>
-                        <a href="https://wa.me/6580206646" target="_blank" rel="noopener noreferrer" className="bg-white text-black border-4 border-black px-10 py-5 rounded-sm font-bold text-xl hover:bg-gray-100 transition-colors flex items-center gap-3 shadow-lg">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-8 h-8" />
+                        <a href="https://wa.me/6580206646" target="_blank" rel="noopener noreferrer" className="flex-1 bg-white text-black border-4 border-black px-8 py-6 rounded-sm font-bold text-xl hover:bg-gray-100 transition-colors flex items-center justify-center gap-3 shadow-lg w-full text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-8 h-8 shrink-0" />
                             WhatsApp Us
                         </a>
                     </div>
