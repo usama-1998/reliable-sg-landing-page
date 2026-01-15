@@ -50,11 +50,11 @@ const ReliableSGLanding = () => {
                     <img src="/logo.png" alt="Reliable SG" className="h-12 w-auto" />
 
                     <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
-                        <button onClick={() => scrollToSection('benefits')} className="hover:text-[#FE0D15] transition-colors">Why Us?</button>
-                        <button onClick={() => scrollToSection('process')} className="hover:text-[#FE0D15] transition-colors">Process</button>
-                        <button onClick={() => scrollToSection('reviews')} className="hover:text-[#FE0D15] transition-colors">Reviews</button>
-                        <a href="tel:88881234" className="bg-white text-black px-5 py-2 rounded-sm font-bold hover:bg-[#FE0D15] transition-colors flex items-center gap-2">
-                            <Phone className="w-4 h-4" /> 8888-1234
+                        <button onClick={() => scrollToSection('benefits')} className="hover:text-[#FE0D15] transition-colors cursor-pointer">Why Us?</button>
+                        <button onClick={() => scrollToSection('process')} className="hover:text-[#FE0D15] transition-colors cursor-pointer">Process</button>
+                        <button onClick={() => scrollToSection('reviews')} className="hover:text-[#FE0D15] transition-colors cursor-pointer">Reviews</button>
+                        <a href="tel:80206646" className="bg-white text-black px-5 py-2 rounded-sm font-bold hover:bg-[#FE0D15] transition-colors flex items-center gap-2">
+                            <Phone className="w-4 h-4" /> 8020 6646
                         </a>
                     </div>
 
@@ -72,7 +72,7 @@ const ReliableSGLanding = () => {
                         <button onClick={() => scrollToSection('benefits')} className="text-left border-b border-white/10 pb-4">Why Us?</button>
                         <button onClick={() => scrollToSection('process')} className="text-left border-b border-white/10 pb-4">Process</button>
                         <button onClick={() => scrollToSection('reviews')} className="text-left border-b border-white/10 pb-4">Reviews</button>
-                        <a href="tel:88881234" className="bg-[#FE0D15] text-black p-4 rounded-sm font-bold flex justify-center items-center gap-2 mt-4">
+                        <a href="tel:80206646" className="bg-[#FE0D15] text-black p-4 rounded-sm font-bold flex justify-center items-center gap-2 mt-4">
                             <Phone className="w-5 h-5" /> Call Now
                         </a>
                     </div>
@@ -102,7 +102,7 @@ const ReliableSGLanding = () => {
                 <div className="container mx-auto px-4 md:px-6 relative z-10 w-full">
                     <div className="max-w-5xl mx-auto text-center">
                         <div className="inline-block bg-black text-[#FE0D15] px-4 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-8 border border-white/10 shadow-lg transform -rotate-2 backdrop-blur-md">
-                            Priority Service for PHV Drivers
+                            🔥 Priority Service for PHV Drivers
                         </div>
 
                         <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.85] tracking-tighter mb-10 transform -skew-x-2">
@@ -116,14 +116,14 @@ const ReliableSGLanding = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                            <a href="tel:88881234" className="group relative px-10 py-5 bg-[#FE0D15] text-black font-black text-xl rounded-sm w-full sm:w-auto overflow-hidden transition-all hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(254,13,21,0.4)] text-center block">
-                                <span className="relative z-10 flex items-center justify-center gap-3">
-                                    <Phone className="w-6 h-6 fill-current" /> GET RESCUED
-                                </span>
-                                <div className="absolute inset-0 bg-white/30 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                            <a href="tel:80206646" className="bg-[#FE0D15] text-black px-12 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center gap-3 shadow-[0_0_40px_rgba(254,13,21,0.4)] border-2 border-[#FE0D15] group">
+                                <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-[#FE0D15] group-hover:rotate-12 transition-transform">
+                                    <Phone className="w-5 h-5 fill-current" />
+                                </div>
+                                CALL 8020 6646
                             </a>
 
-                            <a href="https://wa.me/6588881234" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-sm w-full sm:w-auto hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-3 backdrop-blur-sm">
+                            <a href="https://wa.me/6580206646" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-sm w-full sm:w-auto hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-3 backdrop-blur-sm">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-6 h-6" />
                                 WhatsApp Us
                             </a>
@@ -255,7 +255,7 @@ const ReliableSGLanding = () => {
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> 45Ah - 60Ah Spec</li>
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> Free Onsite Install</li>
                             </ul>
-                            <a href="https://wa.me/6588881234?text=Hi,%20I%20am%20interested%20in%20the%20Standard%20Asian%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 border border-white/20 hover:bg-white hover:text-black transition-colors font-bold rounded-sm text-sm uppercase tracking-wide">Select This Plan</a>
+                            <a href="https://wa.me/6580206646?text=Hi,%20I%20am%20interested%20in%20the%20Standard%20Asian%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 border border-white/20 hover:bg-white hover:text-black transition-colors font-bold rounded-sm text-sm uppercase tracking-wide">Contact</a>
                         </div>
 
                         {/* Card 2 - Highlighted */}
@@ -274,7 +274,7 @@ const ReliableSGLanding = () => {
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> 12-Month Warranty</li>
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> Priority Dispatch</li>
                             </ul>
-                            <a href="https://wa.me/6588881234?text=Hi,%20I%20am%20interested%20in%20the%20High%20Perf%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 bg-[#FE0D15] text-black font-black rounded-sm text-sm uppercase tracking-wide hover:brightness-110 transition-all shadow-lg hover:shadow-[0_0_20px_rgba(254,13,21,0.4)]">Select This Plan</a>
+                            <a href="https://wa.me/6580206646?text=Hi,%20I%20am%20interested%20in%20the%20High%20Perf%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 bg-[#FE0D15] text-black font-black rounded-sm text-sm uppercase tracking-wide hover:brightness-110 transition-all shadow-lg hover:shadow-[0_0_20px_rgba(254,13,21,0.4)]">Contact</a>
                         </div>
 
                         {/* Card 3 */}
@@ -292,7 +292,7 @@ const ReliableSGLanding = () => {
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> AGM Technology</li>
                                 <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-[#FE0D15] flex-shrink-0" /> <span className="text-white font-bold">Computer Reset Included</span></li>
                             </ul>
-                            <a href="https://wa.me/6588881234?text=Hi,%20I%20am%20interested%20in%20the%20Continental%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 border border-white/20 hover:bg-white hover:text-black transition-colors font-bold rounded-sm text-sm uppercase tracking-wide">Select This Plan</a>
+                            <a href="https://wa.me/6580206646?text=Hi,%20I%20am%20interested%20in%20the%20Continental%20Battery%20plan" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 border border-white/20 hover:bg-white hover:text-black transition-colors font-bold rounded-sm text-sm uppercase tracking-wide">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -472,13 +472,13 @@ const ReliableSGLanding = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                        <a href="tel:88881234" className="bg-black text-white px-12 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center gap-3 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-black group">
+                        <a href="tel:80206646" className="bg-black text-white px-12 py-6 rounded-sm font-black text-2xl hover:scale-105 transition-transform flex items-center gap-3 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-black group">
                             <div className="w-10 h-10 bg-[#FE0D15] rounded-full flex items-center justify-center text-black group-hover:rotate-12 transition-transform">
                                 <Phone className="w-5 h-5 fill-current" />
                             </div>
-                            CALL 8888-1234
+                            CALL 8020 6646
                         </a>
-                        <a href="https://wa.me/6588881234" target="_blank" rel="noopener noreferrer" className="bg-white text-black border-4 border-black px-10 py-5 rounded-sm font-bold text-xl hover:bg-gray-100 transition-colors flex items-center gap-3 shadow-lg">
+                        <a href="https://wa.me/6580206646" target="_blank" rel="noopener noreferrer" className="bg-white text-black border-4 border-black px-10 py-5 rounded-sm font-bold text-xl hover:bg-gray-100 transition-colors flex items-center gap-3 shadow-lg">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-8 h-8" />
                             WhatsApp Us
                         </a>
