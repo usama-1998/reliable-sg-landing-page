@@ -73,7 +73,7 @@ const ReliableSGLanding = () => {
                         <button onClick={() => scrollToSection('process')} className="text-left border-b border-white/10 pb-4">Process</button>
                         <button onClick={() => scrollToSection('reviews')} className="text-left border-b border-white/10 pb-4">Reviews</button>
                         <a href="tel:80206646" className="bg-[#FE0D15] text-black p-4 rounded-sm font-bold flex justify-center items-center gap-2 mt-4">
-                            <Phone className="w-5 h-5" /> Call JIM 🔥
+                            <Phone className="w-5 h-5" /> Call JIM
                         </a>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ const ReliableSGLanding = () => {
                                 <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-[#FE0D15] group-hover:rotate-12 transition-transform">
                                     <Phone className="w-5 h-5 fill-current" />
                                 </div>
-                                CALL JIM 🔥 8020 6646
+                                CALL JIM 8020 6646
                             </a>
 
                             <a href="https://wa.me/6580206646" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold text-xl rounded-sm w-full sm:w-auto hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-3 backdrop-blur-sm">
@@ -476,7 +476,7 @@ const ReliableSGLanding = () => {
                             <div className="w-10 h-10 bg-[#FE0D15] rounded-full flex items-center justify-center text-black group-hover:rotate-12 transition-transform">
                                 <Phone className="w-5 h-5 fill-current" />
                             </div>
-                            CALL JIM 🔥 8020 6646
+                            CALL JIM 8020 6646
                         </a>
                         <a href="https://wa.me/6580206646" target="_blank" rel="noopener noreferrer" className="bg-white text-black border-4 border-black px-10 py-5 rounded-sm font-bold text-xl hover:bg-gray-100 transition-colors flex items-center gap-3 shadow-lg">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-8 h-8" />
