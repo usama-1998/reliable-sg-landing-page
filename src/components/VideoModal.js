@@ -1,11 +1,13 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 
 const VideoModal = ({ isOpen, onClose, videoId, platform = 'youtube' }) => {
     if (!isOpen) return null;
 
     // Load TikTok script when modal opens if platform is tiktok
-    React.useEffect(() => {
+    useEffect(() => {
         if (isOpen && platform === 'tiktok') {
             const script = document.createElement('script');
             script.src = 'https://www.tiktok.com/embed.js';
@@ -45,6 +47,8 @@ const VideoModal = ({ isOpen, onClose, videoId, platform = 'youtube' }) => {
                             className="tiktok-embed"
                             cite={`https://www.tiktok.com/video/${videoId}`}
                             data-video-id={videoId}
+                            data-autoplay="true"
+                            data-volume="1"
                             style={{ maxWidth: '605px', minWidth: '325px' }}
                         >
                             <section> <a target="_blank" href="https://www.tiktok.com/@reliable.sg?refer=embed">@reliable.sg</a> </section>
