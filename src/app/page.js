@@ -161,7 +161,10 @@ const ReliableSGLanding = () => {
                                 <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#FE0D15]"></div>
                             </div>
 
-                            <div className="relative aspect-video bg-gray-900 rounded-sm overflow-hidden flex items-center justify-center border border-white/10 shadow-2xl transform transition-transform group-hover:scale-[1.01]">
+                            <div
+                                onClick={() => setShowVideoModal(true)}
+                                className="relative aspect-video bg-gray-900 rounded-sm overflow-hidden flex items-center justify-center border border-white/10 shadow-2xl transform transition-transform group-hover:scale-[1.01] cursor-pointer"
+                            >
                                 <img
                                     src="/mechanic_battery.png"
                                     alt="Mechanic working on car"
